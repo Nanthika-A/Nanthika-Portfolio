@@ -160,33 +160,39 @@ footer a:hover {
         font-size: 2em;
     }
 
-/* Skills Section */
+/* Skills Section - Aesthetic Upgrade */
 .skills {
-    background: #ffffff;
+    background: linear-gradient(to right, #e0f7f5, #f8fffe);
+    padding: 60px 20px;
+}
+
+.skills h2 {
+    margin-bottom: 30px;
 }
 
 .skills-container {
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .skill {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 18px;
-    background: #e0f2f1;
+    padding: 12px 22px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    font-weight: 600;
     color: #00796b;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: 0.3s;
+    border: 1px solid rgba(0, 121, 107, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .skill:hover {
+    transform: translateY(-5px);
     background: #00796b;
-    color: #ffffff;
-    transform: scale(1.1);
-}
-
-    header p {
-        font-size: 1em;
-    }
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 121, 107, 0.3);
 }
